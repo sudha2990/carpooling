@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  seat: 1
+  type: 
+  brand: MyString
+  reference: 
+
+two:
+  seat: 1
+  type: 
+  brand: MyString
+  reference: 

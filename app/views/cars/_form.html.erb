@@ -1,0 +1,27 @@
+<%= form_for @car, :html => { :class => 'form-horizontal', :multipart => true } do |f| %>
+  <%= image_tag @car.picture.url(:medium), size: "350x300" %>
+  <div class="form-group">
+    <%= f.label :picture %><br />
+    <%= f.file_field :picture, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :seat %><br />
+    <%= f.text_field :seat , class: "form-control" %>
+  </div>
+    <%= error_span(@car[:seat]) %>
+  <div class="form-group">
+    <%= f.label :car_type %><br />
+    <%= f.text_field :car_type, class: "form-control" %>
+  </div>
+    <%= error_span(@car[:car_type]) %>
+  <div class="form-group">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand, class: "form-control" %>
+  </div>
+    <%= error_span(@car[:brand]) %>
+  <div class="form-group">
+    <%= f.button :submit, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                cars_path, :class => 'btn btn-default' %>
+  </div>
+<% end %>

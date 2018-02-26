@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source: MyString
+  destination: MyString
+  cost: 1.5
+  duration: 2015-10-16 09:32:08
+  travel_date: 2015-10-16
+  route: 
+  user: 
+
+two:
+  source: MyString
+  destination: MyString
+  cost: 1.5
+  duration: 2015-10-16 09:32:08
+  travel_date: 2015-10-16
+  route: 
+  user: 
